@@ -1,0 +1,196 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+.landing {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.content {
+    padding: 50px;
+    background: #B2AC88;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.section-container {
+    background: #E0BFB8; 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ceremony, .reception {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.ceremony img, .reception img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.ceremony div, .reception div {
+    width: 400px; 
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; 
+}
+.ceremony div h2, .ceremony div p, .reception div h2, .reception div p {
+    margin: 5px 0; 
+}
+.ceremony {
+    flex-direction: row;
+}
+.reception {
+    flex-direction: row-reverse;
+}
+
+.button2 {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    display: block;
+    margin: 10px auto; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d324cd;
+}
+
+.button2:hover {
+    background-color: #573858;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.24), 0 10px 12px rgba(0, 0, 0, 0.19);
+}
+
+#weather-info img {
+    width: 50px;  
+    height: 50px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.how-it-started {
+    position: relative;
+    width: 100vw; 
+    height: 400px; 
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.how-it-started img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.how-it-started-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 80px rgba(0, 0, 0, 0.8);
+}
+.how-it-started-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.button3 {
+    margin-top: 10px;
+    padding: 12px 24px;
+    background: #E0BFB8;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.button3:hover {
+    background: #B2AC88;
+} 
+
+.button2 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #B2AC88;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button2:hover {
+    background: #E0BFB8;
+    color: rgb(0, 0, 0);
+} 
+
+.extra-info {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+}

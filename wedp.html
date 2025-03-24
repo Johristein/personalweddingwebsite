@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="landing">
+        <img src="image1.jpg" alt="Wedding Background" class="background-image">
+        <div class="overlay"></div>
+        <div class="intro">
+            <h2>We're Getting Married!</h2>
+            <h1>Soria & Antoine</h1>
+            <h3>10.14.25</h3>
+        </div>
+    </div>
+    
+    <div class="content" id="content">
+        <div class="section-container" id="section-container">
+
+            <section class="ceremony">
+                <img src="image2.jpg" alt="Ceremony">
+                <div>
+                    <h2>Ceremony</h2>
+                    <p>4:00 PM</p>
+                    <p>Grace Church</p>
+                    <p>123 Demo St.<br>Flagstaff, AZ 12345</p>
+                </div>
+            </section>
+            
+            <section class="reception">
+                <img src="image3.jpg" alt="Reception">
+                <div>
+                    <h2>Reception</h2>
+                    <p>4:30 PM - 10:00 PM</p>
+                    <p>The Barrel Keg</p>
+                    <p>123 Demo St.<br>Flagstaff, AZ 12345</p>
+                </div>
+            </section>
+            
+            <div class="extra-info">
+
+                <div class="map-container">
+                    <h2>Location &#128205</h2>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15869.014298279068!2d106.75754318518068!3d-6.096508554062751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1db6c20a7139%3A0x4b84213ddb28bc20!2sSedayu%20Indo%20Golf!5e0!3m2!1sen!2sid!4v1739283973807!5m2!1sen!2sid"
+                        width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/8zxANBEjjWvT5qjR8">
+                        <button class="button2">View on Maps </button>
+                    </a>
+
+                <section id="weather-info">
+                    <h2>Weather Forecast for Our Wedding Day</h2>
+                    <p id="weather-text">Loading weather prediction...</p>
+                </section>
+                </div>
+
+        </div>
+    </div>
+
+    <section class="how-it-started">
+        <div class="how-it-started-overlay"></div>
+        <img src="image4.jpg" alt="Our Story">
+        <div class="how-it-started-text">
+            <h2>See How It All Started</h2>
+            <a href="our-story.html">
+                <button class="button3">Our Story</button>
+            </a>
+        </div>
+    </section>
+
+    <script src="weather.js"></script>
+    <script src="fadeim.js"></script>
+
+</body>
+</html>
